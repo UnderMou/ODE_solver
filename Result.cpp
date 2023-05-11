@@ -18,7 +18,7 @@ void Result::write_results(){
         cout << *it << " ";
     }
     cout << endl;
-    cout << "t_Ns: ";
+    cout << "t_Ns("<< t_Ns.size() <<"): ";
     for(vector<float>::iterator it = t_Ns.begin(); it != t_Ns.end(); it++){
         cout << *it << " ";
     }

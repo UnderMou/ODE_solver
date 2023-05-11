@@ -8,12 +8,13 @@ class Solver{
         Problem prob;
         Method meth;
         Result res;
+        float t_f;
     public:
-        void init(Problem prob, float delta_t, Method meth, Result res);
+        void init(Problem prob, float delta_t, Method meth, Result res, float t_f);
 
         void run();
 
         bool stop_criteria(float t);
 
-        void show_results();
+        Result return_res();
 };

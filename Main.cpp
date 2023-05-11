@@ -23,10 +23,11 @@ int main(){
 
     // Initialize the solver
     Solver s1;
-    s1.init(p1, 0.5, m1, r1);
+    s1.init(p1, 0.5, m1, r1, 23);
     s1.run();
 
     // Post processing
-    s1.show_results();
+    r1 = s1.return_res();
+    r1.write_results();
     return 0;
 }
