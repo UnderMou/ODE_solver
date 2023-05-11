@@ -12,5 +12,14 @@ int main(){
     Problem p1;
     p1.init(2,v);
     p1.print_info();
+
+    // Initialize the Method
+    Method m1;
+    m1.init("Explicit Euler");
+
+    // Initialize the solver
+    Solver s1;
+    s1.init(p1, 1, m1);
+    s1.run();
     return 0;
 }
