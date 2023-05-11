@@ -23,7 +23,7 @@ int main(){
 
     // Initialize the solver
     Solver s1;
-    s1.init(p1, 1, m1, r1);
+    s1.init(p1, 0.5, m1, r1);
     s1.run();
 
     // Post processing

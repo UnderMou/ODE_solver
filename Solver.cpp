@@ -18,7 +18,7 @@ void Solver::run(){
 }
 
 bool Solver::stop_criteria(float t){
-    if(t<=10){return true;}
+    if(t<10){return true;}
     else{return false;}
 }
 
