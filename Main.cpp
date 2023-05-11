@@ -17,9 +17,16 @@ int main(){
     Method m1;
     m1.init("Explicit Euler");
 
+    // Initialize the results: Initial condition
+    Result r1;
+    r1.init(8,7);
+
     // Initialize the solver
     Solver s1;
-    s1.init(p1, 1, m1);
+    s1.init(p1, 1, m1, r1);
     s1.run();
+
+    // Post processing
+    s1.show_results();
     return 0;
 }
