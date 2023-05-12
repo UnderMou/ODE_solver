@@ -9,6 +9,6 @@ class Method{
     public:
         void init(string meth_name);
 
-        void time_step_advance();
+        vector<float> time_step_advance(Result res, Problem prob, float delta_t);
 
 };

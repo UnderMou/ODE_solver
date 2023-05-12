@@ -11,16 +11,16 @@ void Result::update_results(float yn, float tn){
 }
 
 void Result::write_results(){
-    cout << "Writing the results ..." << endl;
+    cout << "\n\nWriting the results ..." << endl;
 
     cout << "y_Ns("<< y_Ns.size() <<"): ";
     for(vector<float>::iterator it = y_Ns.begin(); it != y_Ns.end(); it++){
-        cout << *it << " ";
+        cout << *it << ",";
     }
     cout << endl;
     cout << "t_Ns("<< t_Ns.size() <<"): ";
     for(vector<float>::iterator it = t_Ns.begin(); it != t_Ns.end(); it++){
-        cout << *it << " ";
+        cout << *it << ",";
     }
     cout << endl;
 }
@@ -28,4 +28,8 @@ void Result::write_results(){
 float Result::current_time(){
     //cout << "current time: " << t_Ns.back() << endl;
     return t_Ns.back();
+}
+
+float Result::current_y(){
+    return y_Ns.back();
 }

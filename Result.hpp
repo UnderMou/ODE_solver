@@ -10,4 +10,6 @@ class Result{
         void write_results();
 
         float current_time();
+
+        float current_y();
 };

@@ -10,8 +10,7 @@ int main(){
 
     // Initialize the Problem with Coeff_vec and Initial condition (y_o = 2 e.g.)
     Problem p1;
-    p1.init(2,v);
-    p1.print_info();
+    p1.init(0);
 
     // Initialize the Method
     Method m1;

@@ -9,12 +9,18 @@ void Solver::init(Problem value1, float value2, Method value3, Result value4, fl
 }
 
 void Solver::run(){
-    float t;
+    vector<float> vec_t_y(2);
+
+    cout << "Log generation:" << endl;
     while(stop_criteria(res.current_time())){
-        cout << res.current_time() << " ";
-        meth.time_step_advance();
-        t = res.current_time()+delta_t;
-        res.update_results(4,t);
+        //Log generation (current time)
+        cout << res.current_time() << "," << res.current_y() << endl;  
+
+        //next time
+        vec_t_y = meth.time_step_advance(res, prob, delta_t); //prob.f_function(tn,);
+
+        //update
+        res.update_results(vec_t_y[1], vec_t_y[0]);
     }
 }
 

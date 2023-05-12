@@ -1,6 +1,6 @@
 #include "Problem.cpp"
-#include "Method.cpp"
 #include "Result.cpp"
+#include "Method.cpp"
 
 class Solver{
     protected:
