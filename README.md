@@ -1,4 +1,4 @@
-# ODE_solver (Under development, nut already running!!!)
+# ODE_solver (Under development, but already running!!!)
 This package is designed to solve first order Ordinary Differential Equaitons (ODE) numerically in C++ with post processing in python. 
 
 To do list:
