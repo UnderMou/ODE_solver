@@ -18,19 +18,16 @@ int main(){
 
     // Initialize the results: Initial condition
     Result r1;
-    r1.init(1,0);
+    r1.init(4.37,0.5);
 
     // Initialize the solver
     Solver s1;
-    s1.init(p1, 0.1, m1, r1, 25);
+    s1.init(p1, 0.01, m1, r1, 6.0);
     s1.run();
 
     // Post processing
     r1 = s1.return_res();
     r1.write_results();
-
-    ofstream myfile;
-    
 
     return 0;
 }
